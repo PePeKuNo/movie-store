@@ -1,0 +1,454 @@
+# Locale dataset for the region "de-DE" (German - Germany).
+# Noun/adjective banks are split by grammatical gender so that generated
+# titles agree grammatically. No German words exist anywhere in the source code.
+de:
+  faker:
+    movie_store:
+      genre:
+        - Action
+        - Abenteuer
+        - Animationsfilm
+        - Krimi
+        - Dokumentarfilm
+        - Drama
+        - Fantasy
+        - Horror
+        - Mystery
+        - Liebesfilm
+        - Science-Fiction
+        - Thriller
+        - Western
+        - Musical
+        - Sportfilm
+        - Familienfilm
+        - Kriegsfilm
+        - Historienfilm
+        - Noir
+        - Mockumentary
+
+      title_pattern:
+        - "#{adjective} #{noun}"
+        - "#{adjective_f} #{noun_f}"
+        - "#{adjective_n} #{noun_n}"
+        - "Der letzte #{noun}"
+        - "Die letzte #{noun_f}"
+        - "Das letzte #{noun_n}"
+        - "Das #{noun_n} von #{place}"
+        - "#{noun} und #{abstract_noun}"
+        - "#{verb_ing} in #{place}"
+        - "#{verb_ing} bei Nacht"
+        - "#{phrase}"
+        - "#{phrase}: #{suffix}"
+        - "Mehr #{abstract_noun}"
+        - "Kein #{abstract_noun} mehr"
+        - "#{phrase}, #{plead}"
+        - "#{noun} #{suffix}"
+        - "Hinter dem #{noun}"
+        - "#{adjective} #{abstract_noun}"
+        - "Noch einmal #{phrase}"
+        - "Mitten in #{place}"
+
+      phrase:
+        - Fühlst du das auch
+        - Nicht zurückblicken
+        - Eine Nacht zu viel
+        - Warte auf mich
+        - Jemand hilft uns
+        - Wo ist der Ausgang
+        - Halt die Linie
+        - Fast zu Hause
+        - Nichts persönlich
+        - Geh einfach weiter
+        - Nicht heute
+        - Lass es brennen
+        - Ruf deine Mutter an
+        - Bleib ruhig
+        - Renn
+        - Atme durch
+        - Vertrau mir
+        - Bleib wach
+        - Zwei Wochen
+        - Alles wird gut
+
+      plead:
+        - Bitte
+        - Wirklich
+        - Nochmal
+        - Danke
+        - Schatz
+        - Heute Abend
+        - In Ordnung
+        - Kein Problem
+
+      suffix:
+        - Rückkehr
+        - Neubeginn
+        - Wiedergeburt
+        - Kapitel Zwei
+        - Für immer
+        - Unter Deckung
+        - Express
+        - Protokoll
+        - Zurück
+        - Offiziell
+
+      adjective:
+        - Stiller
+        - Gebrochener
+        - Verborgener
+        - Kalter
+        - Letzter
+        - Elektrischer
+        - Ruhender
+        - Paperner
+        - Hohler
+        - Goldener
+        - Bitterer
+        - Krummer
+        - Schlafender
+        - Brennender
+        - Endloser
+        - Leiser
+        - Tapferer
+        - Kleiner
+        - Schwerer
+        - Fremder
+        - Einsamer
+        - Wilder
+        - Zweiter
+        - Offener
+
+      # lowercase form of "adjective", used inside sentences
+      adj_lc:
+        - stiller
+        - gebrochener
+        - verborgener
+        - kalter
+        - letzter
+        - elektrischer
+        - ruhender
+        - paperner
+        - hohler
+        - goldener
+        - bitterer
+        - krummer
+        - schlafender
+        - brennender
+        - endloser
+        - leiser
+        - tapferer
+        - kleiner
+        - schwerer
+        - fremder
+        - einsamer
+        - wilder
+        - zweiter
+        - offener
+
+      adjective_f:
+        - Stille
+        - Gebrochene
+        - Verborgene
+        - Kalte
+        - Letzte
+        - Elektrische
+        - Ruhende
+        - Papierne
+        - Hohle
+        - Goldene
+        - Bittere
+        - Krumme
+        - Schlafende
+        - Brennende
+        - Endlose
+        - Leise
+        - Tapfere
+        - Kleine
+        - Schwere
+        - Fremde
+        - Einsame
+        - Wilde
+        - Zweite
+        - Offene
+
+      adjective_n:
+        - Stilles
+        - Gebrochenes
+        - Verborgenes
+        - Kaltes
+        - Letztes
+        - Elektrisches
+        - Ruhendes
+        - Papernes
+        - Hohles
+        - Goldenes
+        - Bitteres
+        - Krummes
+        - Schlafendes
+        - Brennendes
+        - Endloses
+        - Leises
+        - Tapferes
+        - Kleines
+        - Schweres
+        - Fremdes
+        - Einsames
+        - Wildes
+        - Zweites
+        - Offenes
+
+      noun:
+        - Hafen
+        - Wolf
+        - Spiegel
+        - Bahnhof
+        - Fluss
+        - Motor
+        - Fahrer
+        - Garten
+        - Leuchtturm
+        - Steinbruch
+        - Komponist
+        - Pilot
+        - Uhrturm
+        - Soldat
+        - Karneval
+        - Nachbar
+        - Ozean
+        - Zeuge
+        - Ausreißer
+        - Wortführer
+
+      noun_f:
+        - Laterne
+        - Botschaft
+        - Schwester
+        - Autobahn
+        - Schule
+        - Stimme
+        - Straße
+        - Brücke
+        - Wüste
+        - Küste
+        - Steppe
+        - Nachricht
+        - Fahrt
+        - Nähe
+        - Werkstatt
+
+      noun_n:
+        - Signal
+        - Kartell
+        - Klassenzimmer
+        - Experiment
+        - Fenster
+        - Gedächtnis
+        - Krankenhaus
+        - Boot
+        - Dorf
+        - Feuer
+        - Licht
+        - Lager
+        - Bootshaus
+        - Pendel
+
+      abstract_noun:
+        - Herbst
+        - Anfang
+        - Sommer
+        - Winter
+        - Zweifel
+        - Lärm
+        - Hunger
+        - Morgen
+        - Wunsch
+        - Atem
+        - Auftrag
+        - Fehler
+        - Ruf
+        - Zufall
+        - Spaziergang
+        - Besuch
+        - Traum
+        - Ausflug
+        - Anblick
+        - Umweg
+
+      place:
+        - dem Golf
+        - Sektor Sieben
+        - dem Ruhrgebiet
+        - den Alpen
+        - Route 9
+        - der Vorstadt
+        - Marienthal
+        - der Küste
+        - dem Hochland
+        - der Wüste
+        - Nordhof
+        - dem Hafen
+        - der Steppe
+        - dem Tal
+        - der Großstadt
+
+      verb_ing:
+        - Rennen
+        - Fallen
+        - Warten
+        - Fahren
+        - Singen
+        - Bauen
+        - Verstecken
+        - Weggehen
+        - Zuschauen
+        - Brechen
+        - Erinnern
+        - Träumen
+
+      verb:
+        - rennen
+        - warten
+        - anrufen
+        - lügen
+        - versprechen
+        - fragen
+        - klopfen
+        - gehen
+        - schauen
+        - schweigen
+        - bleiben
+        - reden
+
+      tagline:
+        - IM HERBST
+        - DEMNÄCHST IM KINO
+        - NUR EIN WOCHENENDE
+        - AB DEZEMBER IM KINO
+        - JEDE GESCHICHTE ENDET
+        - MANCHE GEHEIMNISSE BLEIBEN BEGRABEN
+        - VON DENEN, DIE MORGEN NOCH DA SIND
+        - REIN FIKTIV
+        - DAS WARTEIST ÜBER
+        - IM SOMMER
+
+      credit_role:
+        - MIT
+        - REGIE
+        - EIN FILM VON
+        - IN DEN HAUPTROLLEN
+        - PRODUKTION
+        - GASTSCHAUSPIELER
+
+      rating:
+        - FSK 0
+        - FSK 6
+        - FSK 12
+        - FSK 16
+        - FSK 18
+
+      review_source:
+        - Film-Rundschau
+        - Der Abendbote
+        - Bildschirm Magazin
+        - Kinoweek
+        - Nordlicht Kritik
+        - Spiegel im Spiegel
+        - Die Tagesreel
+        - Nachtprogramm
+        - Popcorn Journal
+        - Leinwand Weekly
+
+      review_sentence:
+        - "Ich habe danach tagelang an den #{noun} denken müssen."
+        - "Irgendwie wirkt es auf eigentümliche Weise und bleibt dabei leichtfüßig."
+        - "Allein der #{noun} ist den Eintritt wert."
+        - "Es #{verb_s} wunderbar, bis es das absolut nicht mehr tut."
+        - "Ein #{adj_lc} Film, der sich nicht benehmen will."
+        - "Die Hälfte ist Quatsch und ich würde ihn zweimal ansehen."
+        - "Niemand hat danach gefragt und trotzdem sind wir dankbar."
+        - "Die Kamera bleibt eine Sekunde zu lange und genau das funktioniert."
+        - "Nimm jemanden mit, den du liebst, oder geh allein."
+        - "Es #{verb_s} wie eine Erinnerung, an die man sich nicht sicher ist."
+        - "Für eine Weile habe ich vergessen, dass ich im Kino sitze."
+        - "Das Ende hält das Ganze mehr oder weniger zusammen."
+        - "Ruhig, langsam und weitaus wütender als das Plakat vermuten lässt."
+        - "Ich habe gelacht, dann nicht mehr, dann wieder."
+        - "Der #{noun} spielt die Hauptrolle – und gut."
+        - "Ein sehr #{adj_lc} Film über sehr gewöhnliche Menschen."
+        - "Zwei Stunden sind weg. Ich würde ihm noch zwei geben."
+        - "Er versteht etwas, das die letzten vier Filme nicht verstanden haben."
+        - "Nicht perfekt, nicht langweilig und bestimmt nicht fertig mit mir."
+        - "Die Musik bleibt, lange nachdem das Licht angegangen ist."
+
+      verb_s:
+        - landet
+        - treibt
+        - bricht zusammen
+        - leuchtet
+        - bricht
+        - hält
+        - schwebt
+        - schmerzt
+        - kehrt zurück
+        - brennt
+        - setzt sich
+        - irrt
+
+      synopsis:
+        - "Jahre nach der #{adj_event} kehrt ein #{adj_lc} #{noun} nach #{place} zurück und findet: Dort vergeht niemand stillschweigend."
+        - "Als das letzte #{noun_n} in #{place} ausgeht, beschließt ein #{adj_lc} Fremder, genau er es zu reparieren."
+        - "Ein #{adj_lc} #{noun} und ein noch #{adj_lc} #{noun2} verbringen eine lange Nacht damit zu entscheiden, wer #{place} verlassen darf."
+        - "Niemand glaubte den Briefen, bis der #{noun} eintraf – jede Woche, immer abgestempelt aus #{place}."
+        - "Zwischen einer #{adj_event} und einer sehr schlechten Idee lernt eine Familie aus #{place}, was die Wahrheit kostet."
+        - "Er hatte geschworen, nie wieder zu #{verb}, dann stand ein #{adj_lc} #{noun} vor der Tür."
+        - "Überall erinnert sich jeder an alles – und ein #{adj_lc} #{noun} beschließt, es bewusst zu vergessen."
+        - "Drei Fremde teilen sich die Fahrt aus #{place} – und keiner erzählt die ganze Wahrheit."
+        - "Das Experiment sollte elf Minuten dauern. Es läuft seit #{noun3} weiter."
+        - "Ein #{adj_lc} #{noun} filmt alles, was er sieht, und jemand in #{place} will die Bänder zurück."
+
+      adj_event:
+        - Überschwemmung
+        - Brand
+        - Wahl
+        - Winter
+        - Unfall
+        - Gerücht
+        - Streik
+        - Blackout
+        - Hochzeit
+        - Beerdigung
+
+      noun2:
+        - Schwindel
+        - Streit
+        - Verdacht
+        - Auftrag
+        - Zorn
+        - Zweifel
+        - Ausweg
+        - Atem
+        - Anlass
+        - Beschluss
+
+      noun3:
+        - elf Jahren
+        - einem ganzen Winter
+        - drei Wochen
+        - einem langen Sommer
+        - fast einem Jahrzehnt
+
+      studio:
+        - Nordlicht Pictures
+        - Fennec & Ward
+        - Silberlinie Studios
+        - Atlas Bucht Film
+        - Haro Straße Produktion
+        - Kühler Hafen Media
+        - Piper Hill Entertainment
+        - Neunter Straße Kino
+
+      season_word:
+        - Frühling
+        - Sommer
+        - Herbst
+        - Winter

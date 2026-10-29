@@ -1,0 +1,372 @@
+# Locale dataset for the region "en-US" (English - United States).
+# Everything that is specific to a language/region lives in these files so
+# that new languages/regions can be added without touching Ruby/JS code.
+en-US:
+  faker:
+    movie_store:
+      genre:
+        - Action
+        - Adventure
+        - Animation
+        - Comedy
+        - Crime
+        - Documentary
+        - Drama
+        - Fantasy
+        - Horror
+        - Mystery
+        - Romance
+        - Sci-Fi
+        - Thriller
+        - Western
+        - Musical
+        - Sports
+        - Family
+        - War
+        - Historical
+        - Neo-Noir
+
+      title_pattern:
+        - "#{adjective} #{noun}"
+        - "The #{noun} of #{abstract_noun}"
+        - "The Last #{noun}"
+        - "#{noun} and #{abstract_noun}"
+        - "#{abstract_noun} of #{place}"
+        - "#{verb_ing} in #{place}"
+        - "#{phrase}"
+        - "#{phrase}: #{suffix}"
+        - "#{place} #{abstract_noun}"
+        - "No More #{abstract_noun}"
+        - "#{adjective} #{noun}"
+        - "#{verb_ing} #{abstract_noun}"
+        - "#{phrase}, #{plead}"
+        - "#{noun} #{suffix}"
+        - "Beyond the #{noun}"
+        - "#{adjective} #{abstract_noun}"
+        - "#{phrase} Again"
+        - "Under #{place}"
+
+      phrase:
+        - Feel Something
+        - Do Not Look Back
+        - One More Night
+        - Wait for It
+        - Somebody Help
+        - Where Is the Door
+        - Hold the Line
+        - Almost Home
+        - Nothing Personal
+        - Keep Walking
+        - Slow Down
+        - Not Today
+        - Let It Burn
+        - Call Your Mother
+        - Stay Soft
+        - Run
+        - Breathe
+        - Trust Me
+        - Look Alive
+        - Take the Shot
+        - Say It Twice
+        - Never Mind Me
+        - Two Weeks
+        - All the Quiet
+
+      plead:
+        - Please
+        - Really
+        - Again
+        - Thanks
+        - Darling
+        - Tonight
+        - Okay?
+        - No Worries
+
+      suffix:
+        - Reborn
+        - Returns
+        - Rising
+        - Reloaded
+        - The Beginning
+        - Part Two
+        - Again
+        - Forever
+        - Undercover
+        - Incorporated
+        - Express
+        - Protocol
+
+      adjective:
+        - Silent
+        - Broken
+        - Hidden
+        - Cold
+        - Final
+        - Electric
+        - Restless
+        - Paper
+        - Hollow
+        - Golden
+        - Bitter
+        - Crooked
+        - Sleeping
+        - Burning
+        - Endless
+        - Quiet
+        - Crooked
+        - Brave
+        - Little
+        - Heavy
+        - Strange
+        - Lonely
+        - Wild
+        - Second
+
+      # lowercase form of "adjective", used inside sentences
+      adj_lc:
+        - silent
+        - broken
+        - hidden
+        - cold
+        - final
+        - electric
+        - restless
+        - paper
+        - hollow
+        - golden
+        - bitter
+        - crooked
+        - sleeping
+        - burning
+        - endless
+        - quiet
+        - brave
+        - little
+        - heavy
+        - strange
+        - lonely
+        - wild
+        - second
+
+      noun:
+        - Harbor
+        - Signal
+        - Empire
+        - Wolf
+        - Mirror
+        - Station
+        - Garden
+        - Lantern
+        - River
+        - Machine
+        - Driver
+        - Orchard
+        - Embassy
+        - Soldier
+        - Clock
+        - Classroom
+        - Carnival
+        - Highway
+        - Lighthouse
+        - Quarry
+        - Cartel
+        - Composer
+        - Pilot
+        - Sister
+
+      abstract_noun:
+        - Fall
+        - Truth
+        - Beginning
+        - End
+        - Silence
+        - Mercy
+        - Summer
+        - Winter
+        - Doubt
+        - Grace
+        - Noise
+        - Patience
+        - Hunger
+        - Fortune
+        - Distance
+        - Mercy
+        - Tomorrow
+        - Weight
+        - Weather
+        - Luck
+
+      place:
+        - Brooklyn
+        - the Gulf
+        - Sector Seven
+        - Detroit
+        - the Valley
+        - Marseille
+        - Route 9
+        - the Outskirts
+        - Silent Creek
+        - Baytown
+        - the Highlands
+        - Old Havana
+        - North Yard
+        - the Desert
+        - Steel Pier
+
+      verb_ing:
+        - Running
+        - Falling
+        - Waiting
+        - Driving
+        - Singing
+        - Building
+        - Hiding
+        - Leaving
+        - Watching
+        - Breaking
+        - Remembering
+        - Dreaming
+
+      verb:
+        - run
+        - come back
+        - call
+        - wait
+        - lie
+        - promise
+        - ask
+        - knock
+        - leave
+        - look back
+        - speak
+        - stay
+
+      tagline:
+        - THIS FALL
+        - COMING SOON
+        - ONE WEEKEND ONLY
+        - IN CINEMAS DECEMBER
+        - EVERY STORY ENDS
+        - SOME SECRETS STAY BURIED
+        - FROM THE STUDIO THAT BROUGHT YOU TOMORROW
+        - BASED ON NOTHING THAT EVER HAPPENED
+        - THE WAIT IS OVER
+        - THIS SUMMER
+
+      credit_role:
+        - STARRING
+        - DIRECTED BY
+        - A FILM BY
+        - FEATURING
+        - WITH
+        - PRODUCED BY
+
+      rating:
+        - G
+        - PG
+        - PG-13
+        - R
+        - NC-17
+        - TV-14
+
+      review_source:
+        - Reel Talk
+        - The Evening Dispatch
+        - Screen Notes
+        - Picture House Weekly
+        - Northside Review
+        - Cinema Quarterly
+        - The Daily Frame
+        - Late Show Mag
+        - Popcorn Ledger
+        - Bright Lights Journal
+
+      review_sentence:
+        - "I could not stop thinking about the #{noun} for days."
+        - "Somehow it is #{adjective} and #{adjective} at the same time."
+        - "The #{noun} alone is worth the price of the ticket."
+        - "It #{verb_s} beautifully until it absolutely does not."
+        - "A #{adjective} little picture that refuses to behave."
+        - "Half of it is nonsense and I would watch it twice."
+        - "Nobody asked for this and yet here we are, grateful."
+        - "The camera stays #{adjective} a few seconds too long and it works."
+        - "Bring someone you love, or bring nobody at all."
+        - "It #{verb_s} like a memory you are not sure you have."
+        - "For a while I forgot I was sitting in a cinema."
+        - "The ending #{verb_s} the whole thing together, mostly."
+        - "Quiet, #{adjective}, and much angrier than the poster suggests."
+        - "I laughed, then I did not, then I laughed again."
+        - "The #{noun} is doing all the acting and doing it well."
+        - "A very #{adjective} film about very ordinary people."
+        - "Two hours vanish. I would give it another two."
+        - "It understands something the last four films I saw did not."
+        - "Not perfect, not boring, and definitely not finished with me."
+        - "The score keeps #{verb_ing} long after the lights come up."
+
+      verb_s:
+        - lands
+        - drifts
+        - collapses
+        - glows
+        - breaks
+        - holds
+        - floats
+        - aches
+        - returns
+        - burns
+        - settles
+        - wanders
+
+      synopsis:
+        - "Years after a #{adj_event}, the #{adj_lc} #{noun} returns to #{place} to find that nothing there forgives quietly."
+        - "When the last #{noun} in #{place} goes dark, the #{adj_lc} stranger decides to be the one who fixes it."
+        - "The #{adj_lc} #{noun} and an even more stubborn #{noun2} spend one long night deciding who gets to leave #{place}."
+        - "Nobody believed the letters until the #{noun} started arriving, one a week, always postmarked from #{place}."
+        - "Between two #{adj_event} and one very bad idea, a family from #{place} learns how expensive the truth really is."
+        - "He swore he would never #{verb} again, and then the #{adj_lc} #{noun} showed up at the door."
+        - "In the #{adj_lc} town where everyone remembers everything, one #{noun} decides to forget on purpose."
+        - "Three strangers share a ride out of #{place} and none of them are telling the whole story."
+        - "The experiment was supposed to last eleven minutes. It has now been running for #{noun3}."
+        - "The #{adj_lc} #{noun} records everything she sees, and someone in #{place} wants the tapes back."
+
+      adj_event:
+        - flood
+        - fire
+        - election
+        - winter
+        - accident
+        - rumor
+        - strike
+        - blackout
+        - wedding
+        - funeral
+
+      noun2:
+        - habit
+        - secret
+        - apology
+        - promise
+        - argument
+
+      noun3:
+        - eleven years
+        - a whole winter
+        - three weeks
+        - one long summer
+        - the better part of a decade
+
+      studio:
+        - Northlight Pictures
+        - Fennec & Ward
+        - Silverline Studios
+        - Atlas Bay Films
+        - Harrow Street Pictures
+        - Cold Harbour Media
+        - Piper Hill Entertainment
+        - Ninth Street Cinema
+
+      season_word:
+        - Spring
+        - Summer
+        - Fall
+        - Winter

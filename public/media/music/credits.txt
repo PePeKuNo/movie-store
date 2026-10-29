@@ -1,0 +1,12 @@
+﻿music_01.mp3 -> "Clash Defiant" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Clash%20Defiant.mp3 | Duration: 60s
+music_02.mp3 -> "Death and Axes" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Death%20and%20Axes.mp3 | Duration: 60s
+music_03.mp3 -> "Failing Defense" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Failing%20Defense.mp3 | Duration: 60s
+music_04.mp3 -> "Exit the Premises" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exit%20the%20Premises.mp3 | Duration: 60s
+music_05.mp3 -> "Amazing Plan" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Amazing%20Plan.mp3 | Duration: 60s
+music_06.mp3 -> "Interloper" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Interloper.mp3 | Duration: 60s
+music_07.mp3 -> "Rising Tide" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Rising%20Tide.mp3 | Duration: 60s
+music_08.mp3 -> "Heartbreaking" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heartbreaking.mp3 | Duration: 60s
+music_09.mp3 -> "Prelude and Action" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Prelude%20and%20Action.mp3 | Duration: 60s
+music_10.mp3 -> "Stormfront" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Stormfront.mp3 | Duration: 60s
+music_11.mp3 -> "Cryptic Sorrow" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cryptic%20Sorrow.mp3 | Duration: 60s
+music_12.mp3 -> "Evening of Chaos" by Kevin MacLeod (incompetech.com) | License: CC BY 4.0 | Source: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Evening%20of%20Chaos.mp3 | Duration: 60s

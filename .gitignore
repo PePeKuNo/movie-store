@@ -1,0 +1,32 @@
+# Ruby / Rails
+/.bundle
+/vendor/bundle
+*.gem
+
+# Secrets — never commit the master key (credentials.yml.enc stays, the key does not)
+/config/master.key
+/config/credentials/*.key
+/.env*
+.env*
+
+# Logs and local caches
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+/public/assets
+/public/packs
+/public/packs-test
+
+# Editors and OS junk
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node (not used, but keep it out if it ever appears)
+/node_modules/
+
+# Test/coverage artifacts
+/coverage/

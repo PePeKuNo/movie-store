@@ -1,0 +1,16 @@
+# Registry of the regions the showcase can display.
+# Add/remove entries here to add or remove a language/region - no source code
+# has to be touched. `faker_locale` is the locale Faker uses for person names
+# and other fake data, `tag` is the application locale (UI strings live in
+# config/locales/ui/<tag>.yml).
+regions:
+  - tag: en-US
+    label: English (US)
+    faker_locale: en-US
+    default: true
+  - tag: de-DE
+    label: Deutsch (Deutschland)
+    faker_locale: de
+  - tag: uk-UA
+    label: Українська (Україна)
+    faker_locale: uk

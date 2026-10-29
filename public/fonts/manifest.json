@@ -1,0 +1,86 @@
+[
+    {
+        "file":  "FiraSansCondensed-Regular.ttf",
+        "family":  "Fira Sans Condensed",
+        "weight":  400,
+        "style":  "normal",
+        "size":  459804
+    },
+    {
+        "file":  "FiraSansCondensed-Bold.ttf",
+        "family":  "Fira Sans Condensed",
+        "weight":  700,
+        "style":  "normal",
+        "size":  489176
+    },
+    {
+        "file":  "FiraSans-Regular.ttf",
+        "family":  "Fira Sans",
+        "weight":  400,
+        "style":  "normal",
+        "size":  456996
+    },
+    {
+        "file":  "FiraSans-Bold.ttf",
+        "family":  "Fira Sans",
+        "weight":  700,
+        "style":  "normal",
+        "size":  489720
+    },
+    {
+        "file":  "FiraSans-Italic.ttf",
+        "family":  "Fira Sans",
+        "weight":  400,
+        "style":  "italic",
+        "size":  472396
+    },
+    {
+        "file":  "PT_Sans-Narrow-Web-Regular.ttf",
+        "family":  "PT Sans Narrow",
+        "weight":  400,
+        "style":  "normal",
+        "size":  396212
+    },
+    {
+        "file":  "PT_Sans-Narrow-Web-Bold.ttf",
+        "family":  "PT Sans Narrow",
+        "weight":  700,
+        "style":  "normal",
+        "size":  487720
+    },
+    {
+        "file":  "RussoOne-Regular.ttf",
+        "family":  "Russo One",
+        "weight":  400,
+        "style":  "normal",
+        "size":  39124
+    },
+    {
+        "file":  "PT_Serif-Web-Regular.ttf",
+        "family":  "PT Serif",
+        "weight":  400,
+        "style":  "normal",
+        "size":  359048
+    },
+    {
+        "file":  "PT_Serif-Web-Bold.ttf",
+        "family":  "PT Serif",
+        "weight":  700,
+        "style":  "normal",
+        "size":  339996
+    },
+    {
+        "file":  "Oranienbaum-Regular.ttf",
+        "family":  "Oranienbaum",
+        "weight":  400,
+        "style":  "normal",
+        "size":  141220
+    },
+    {
+        "file":  "YesevaOne-Regular.ttf",
+        "family":  "Yeseva One",
+        "weight":  400,
+        "style":  "normal",
+        "size":  108016
+    }
+]

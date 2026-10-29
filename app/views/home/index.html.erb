@@ -1,0 +1,145 @@
+<% content_for(:title) { "Movie Store — deterministic fake movie showcase" } %>
+
+<div class="app">
+  <header class="toolbar">
+    <div class="brand">
+      <span class="brand__mark" aria-hidden="true">M</span>
+      <div class="brand__text">
+        <span class="brand__name" data-ui="brand">Movie Store</span>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="field__label" for="region" data-ui="language">Language</label>
+      <div class="select">
+        <select id="region" class="field__control">
+          <% @regions.each do |region| %>
+            <option value="<%= region.tag %>" <%= "selected" if region.default %>><%= region.label %></option>
+          <% end %>
+        </select>
+        <span class="select__chevron" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="field field--seed">
+      <label class="field__label" for="seed" data-ui="seed">Seed</label>
+      <div class="seed">
+        <input id="seed" class="field__control seed__input" type="text" spellcheck="false"
+               autocomplete="off" aria-describedby="seed-hint" value="0">
+        <button id="random-seed" class="icon-btn" type="button" data-ui-title="randomize"
+                aria-label="Random seed">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm2.5 5.2a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Zm9 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6ZM12 11a1.3 1.3 0 1 0 0 2.6A1.3 1.3 0 0 0 12 11Zm-4.5 3.8a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Zm9 0a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6Z"/>
+          </svg>
+        </button>
+      </div>
+      <span class="field__hint" id="seed-hint" data-ui="seed_hint"></span>
+    </div>
+
+    <div class="field field--range">
+      <label class="field__label" for="likes">
+        <span data-ui="likes">Likes</span>
+        <output class="field__value" id="likes-out" for="likes">0.0</output>
+      </label>
+      <input id="likes" class="slider" type="range" min="0" max="10" step="0.1" value="0">
+    </div>
+
+    <div class="field field--range">
+      <label class="field__label" for="reviews">
+        <span data-ui="reviews">Reviews</span>
+        <output class="field__value" id="reviews-out" for="reviews">0.0</output>
+      </label>
+      <input id="reviews" class="slider" type="range" min="0" max="10" step="0.1" value="0">
+    </div>
+
+    <div class="field field--view">
+      <span class="field__label" data-ui="view">View</span>
+      <div class="segmented" role="group" aria-label="View mode">
+        <button id="view-table" class="segmented__btn is-active" type="button" data-ui="table">Table</button>
+        <button id="view-gallery" class="segmented__btn" type="button" data-ui="gallery">Gallery</button>
+      </div>
+    </div>
+
+    <button id="export" class="btn btn--export" type="button" data-ui-title="export_hint">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+        <path fill="currentColor" d="M11 3h2v10.2l3.6-3.6 1.4 1.4L12 17l-6-6 1.4-1.4L11 13.2V3Zm-6 15h14v2H5v-2Z"/>
+      </svg>
+      <span data-ui="export">Export trailers (ZIP)</span>
+    </button>
+  </header>
+
+  <main class="main">
+    <!-- ---------------------------------------------------------- TABLE -->
+    <section id="table-view" class="view">
+      <div class="view__bar">
+        <span class="view__count" id="range-label"></span>
+        <span class="view__hint" id="table-hint"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="movies">
+          <thead>
+            <tr>
+              <th class="movies__num" data-ui="col_index">#</th>
+              <th data-ui="col_title">Title</th>
+              <th class="movies__year" data-ui="col_year">Year</th>
+              <th class="movies__genres" data-ui="col_genres">Genres</th>
+              <th class="movies__cast" data-ui="col_cast">Cast</th>
+              <th class="movies__num" data-ui="col_duration">Runtime</th>
+              <th class="movies__num" data-ui="col_likes">Likes</th>
+              <th class="movies__num" data-ui="col_reviews">Reviews</th>
+              <th class="movies__play"></th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <div class="empty" id="table-empty" hidden data-ui="empty"></div>
+      </div>
+
+      <nav class="pager" id="pager" aria-label="Pagination">
+        <button class="pager__btn" type="button" data-page="first" data-ui="first">First</button>
+        <button class="pager__btn" type="button" data-page="prev" data-ui="prev">Previous</button>
+        <span class="pager__pages" id="pages"></span>
+        <button class="pager__btn" type="button" data-page="next" data-ui="next">Next</button>
+        <span class="pager__label"><span data-ui="page"></span> <strong id="page-number">1</strong></span>
+      </nav>
+    </section>
+
+    <!-- -------------------------------------------------------- GALLERY -->
+    <section id="gallery-view" class="view" hidden>
+      <div class="view__bar">
+        <span class="view__count" id="gallery-count"></span>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="sentinel" id="sentinel"></div>
+      <div class="loader" id="gallery-loader" hidden>
+        <span class="loader__spin"></span>
+        <span data-ui="loading"></span>
+      </div>
+      <p class="gallery__end" id="gallery-end" hidden data-ui="infinite_end"></p>
+      <div class="empty" id="gallery-empty" hidden data-ui="empty"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="footer__credits" data-ui="credits"></span>
+    <span class="footer__meta" id="media-stats"></span>
+  </footer>
+</div>
+
+<!-- lightbox used by the gallery view -->
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox__backdrop" data-close></div>
+  <div class="lightbox__panel" role="dialog" aria-modal="true">
+    <button class="lightbox__close" type="button" data-close aria-label="Close">&times;</button>
+    <div class="lightbox__body" id="lightbox-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script type="application/json" id="bootstrap"><%= {
+  "regions" => @regions.map { |r| { "tag" => r.tag, "label" => r.label } },
+  "defaultRegion" => RegionRegistry.default.tag,
+  "defaultSeed" => SeedParser.random.to_s
+}.to_json.html_safe %></script>
